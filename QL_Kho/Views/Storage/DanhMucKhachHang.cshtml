@@ -1,3 +1,312 @@
-﻿<div class="text-center">
-    <h1 class="display-4">Danh mục khách hàng</h1>
-</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Danh mục khách hàng</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>Danh mục khách hàng</h1>
+
+    <div class="filter-search">
+        <input type="text" placeholder="Tìm kiếm khách hàng">
+        <button>Tìm kiếm</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tên</th>
+                <th>Địa chỉ</th>
+                <th>Email</th>
+                <th>Số điện thoại</th>
+                <th>Ngày tạo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nguyễn Trí Trung</td>
+                <td>Hà Nội</td>
+                <td>Tritrung@gmail.com</td>
+                <td>0123456789</td>
+                <td>2022-01-01</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Thị Bưởi</td>
+                <td>TP.HCM</td>
+                <td>buoibuoi@gmail.com</td>
+                <td>0987654321</td>
+                <td>2022-02-01</td>
+            </tr>
+            <tr>
+                <td>Hoàng Thị Gấm </td>
+                <td>TP.HCM</td>
+                <td>gamming@gmail.com</td>
+                <td>0987654321</td>
+                <td>2022-07-01</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Tiến Đạt </td>
+                <td>TP.HCM</td>
+                <td>DatKhongChin@gmail.com</td>
+                <td>098783653</td>
+                <td>2022-06-01</td>
+            </tr>
+            <tr>
+                <td>Nguyễn Nhật Huy </td>
+                <td>Hà Nội </td>
+                <td>huyhut@gmail.com</td>
+                <td>0987654321</td>
+                <td>2022-07-01</td>
+            </tr>
+            <tr>
+                <td>Đinh Tiến Dũng  </td>
+                <td>Hà Nội </td>
+                <td>DatKhongChin@gmail.com</td>
+                <td>098783653</td>
+                <td>2022-06-01</td>
+            </tr>
+            <!-- Các hàng khách hàng khác -->
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        <a href="#" id="previousPage">Trang trước</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#" id="nextPage">Trang tiếp</a>
+    </div>
+
+
+
+    <div class="customer-details">
+        <h2>Chi tiết khách hàng</h2>
+        <form>
+            <label for="customer-name">Tên:</label>
+            <input type="text" id="customer-name" name="customer-name">
+
+            <label for="customer-address">Địa chỉ:</label>
+            <input type="text" id="customer-address" name="customer-address">
+
+            <label for="customer-email">Email:</label>
+            <input type="email" id="customer-email" name="customer-email">
+
+            <label for="customer-phone">Số điện thoại:</label>
+            <input type="tel" id="customer-phone" name="customer-phone">
+
+            <label for="customer-created">Ngày tạo:</label>
+            <input type="date" id="customer-created" name="customer-created">
+
+            <!-- Các ô nhập liệu khác -->
+        </form>
+    </div>
+</body>
+</html>
+
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    .filter-search {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+        .filter-search input[type="text"] {
+            padding: 5px;
+            width: 200px;
+        }
+
+        .filter-search button {
+            padding: 5px 10px;
+        }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+    .pagination {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+        .pagination a {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 0 5px;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ccc;
+        }
+
+    .customer-details {
+        margin-top: 20px;
+    }
+
+        .customer-details h2 {
+            text-align: center;
+        }
+
+        .customer-details p {
+            margin-bottom: 10px;
+        }
+
+    .customer-details {
+        margin-top: 20px;
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+        .customer-details h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .customer-details label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .customer-details input[type="text"],
+        .customer-details input[type="email"],
+        .customer-details input[type="tel"],
+        .customer-details input[type="date"],
+        .customer-details textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .customer-details button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .customer-details button:hover {
+                background-color: #45a049;
+            }
+
+    body {
+        color: #333;
+        background-color: #f5f5f5;
+    }
+
+    h1 {
+        color: #444;
+    }
+
+    .filter-search input[type="text"] {
+        background-color: #fff;
+    }
+
+    .filter-search button {
+        background-color: #4CAF50;
+        color: #fff;
+    }
+
+    table th, table td {
+        background-color: #fff;
+    }
+
+    .pagination a {
+        background-color: #fff;
+        color: #333;
+        border: 1px solid #ccc;
+    }
+
+    .customer-details {
+        background-color: #fff;
+        border: 1px solid #ccc;
+    }
+
+        .customer-details h2 {
+            color: #444;
+        }
+
+        .customer-details label {
+            color: #333;
+        }
+
+        .customer-details input[type="text"],
+        .customer-details input[type="email"],
+        .customer-details input[type="tel"],
+        .customer-details input[type="date"],
+        .customer-details textarea {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+        }
+
+        .customer-details button {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+            .customer-details button:hover {
+                background-color: #45a049;
+            }
+
+    body {
+        background-color: #ce7d7d;
+    }
+
+
+    .customer-details {
+        background-color: #ffe6f2;
+        border: 1px solid #f692bd;
+    }
+
+        .customer-details h2 {
+            color: #f692bd;
+        }
+
+        .customer-details label {
+            color: #333;
+        }
+
+        .customer-details input[type="text"],
+        .customer-details input[type="email"],
+        .customer-details input[type="tel"],
+        .customer-details input[type="date"],
+        .customer-details textarea {
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .customer-details button {
+            background-color: #f692bd;
+            color: #fff;
+        }
+
+            .customer-details button:hover {
+                background-color: #e269a1;
+            }
+
+    .filter-search button {
+        background-color: #4CAF50;
+        color: #fff;
+        cursor: pointer;
+    }
+
+</style>
