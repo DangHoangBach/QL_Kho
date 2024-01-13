@@ -28,3 +28,4 @@ D:\Code\LapTrinhWeb\QL_Kho\obj\Debug\net8.0\refint\QL_Kho.dll
 D:\Code\LapTrinhWeb\QL_Kho\obj\Debug\net8.0\QL_Kho.pdb
 D:\Code\LapTrinhWeb\QL_Kho\obj\Debug\net8.0\QL_Kho.genruntimeconfig.cache
 D:\Code\LapTrinhWeb\QL_Kho\obj\Debug\net8.0\ref\QL_Kho.dll
+D:\Code\LapTrinhWeb\QL_Kho\obj\Debug\net8.0\QL_Kho.sourcelink.json
