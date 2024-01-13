@@ -17,9 +17,25 @@ namespace QL_Kho.Models
         public int thanhTien { get; set; }
         public SanPham()
         {
-
+            this.id = 0;
+            this.tenSanPham = "";
+            this.maSanPham = "";
+            this.donViTinh = "";
+            this.soLuong = 0;
+            this.donGia = 0;    
+            this.thanhTien = 0;
 
         }
+        public SanPham(int id)
+        {
+            this.id = 0;
+            this.tenSanPham = "";
+            this.maSanPham = "";
+            this.donViTinh = "";
+            this.soLuong = 0;
+            this.donGia = 0;
+            this.thanhTien = 0;
 
+        }
     }
 }
