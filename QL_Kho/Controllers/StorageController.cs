@@ -6,11 +6,16 @@ namespace QL_Kho.Controllers
 {
     public class StorageController : Controller
     {
-        public IActionResult NhapKho()
+        public IActionResult QuanLyKhoHang()
         {
             return View();
         }
-        public IActionResult XuatKho()
+        public IActionResult PhieuNhapKho()
+        {
+            return View();
+        }
+       
+        public IActionResult PhieuXuatKho()
         {
             return View();
         }
